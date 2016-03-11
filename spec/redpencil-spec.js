@@ -14,4 +14,9 @@ describe("Modify Product Price", function () {
         var index = GetProductIndexById("C5");
         expect(index).toBe(-1);
     });
+
+    it("increases price of product with id \"B5\" by 100", function () {
+        ModifyProductPrice("B5", null);
+        expect(products[1].price).toBe(600);
+    });
 });

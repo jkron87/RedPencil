@@ -12,9 +12,9 @@
  */
 
 var products = [
-    {"id": "A1", "name": "Hat"},
-    {"id": "B5", "name": "Suit"},
-    {"id": "C3", "name": "Shoes"}
+    {"id": "A1", "name": "Hat", "price": 200},
+    {"id": "B5", "name": "Suit", "price": 500},
+    {"id": "C3", "name": "Shoes", "price": 300}
 ];
 
 /**
@@ -27,4 +27,12 @@ function GetProductIndexById(id) {
         }
     }
     return -1
+}
+
+/**
+ * @return {number}
+ */
+function ModifyProductPrice(id, value) {
+    var index = GetProductIndexById(id);
+    products[index].price += value;
 }
