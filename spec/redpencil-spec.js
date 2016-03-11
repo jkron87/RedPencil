@@ -19,4 +19,8 @@ describe("Modify Product Price", function () {
         ModifyProductPrice("B5", 100);
         expect(products[1].price).toBe(600);
     });
+
+    it("does not attempt to modify product if there is no corresponding id", function () {
+        ModifyProductPrice("D4", 100);
+    });
 });
