@@ -59,4 +59,9 @@ describe("Modify Product Price", function () {
         expect(products[3].promotion_active).toBe(true);
     });
 
+    it("updates red pencil promotion status to active only when days since price change are 30 or higher", function () {
+        ModifyProductPrice("A1", -100);
+        expect(products[0].promotion_active).toBe(false);
+    });
+
 });
