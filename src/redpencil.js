@@ -35,6 +35,7 @@ function GetProductIndexById(id) {
 function ModifyProductPrice(id, value) {
     var index = GetProductIndexById(id);
     if (index != -1) {
+        products[index].old_price = products[index].price;
         products[index].price += value;
     }
 }
