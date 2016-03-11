@@ -26,4 +26,5 @@ function GetProductIndexById(id) {
             return i
         }
     }
+    return -1
 }
