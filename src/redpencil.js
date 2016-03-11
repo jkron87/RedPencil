@@ -40,6 +40,7 @@ function ModifyProductPrice(id, value) {
         products[index].old_price = products[index].price;
         products[index].price += value;
         products[index].days_since_price_change = 0;
+        products[index].promotion_active = true;
     }
 }
 
