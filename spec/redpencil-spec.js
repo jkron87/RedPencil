@@ -16,7 +16,7 @@ describe("Modify Product Price", function () {
     });
 
     it("increases price of product with id \"B5\" by 100", function () {
-        ModifyProductPrice("B5", null);
+        ModifyProductPrice("B5", 100);
         expect(products[1].price).toBe(600);
     });
 });
