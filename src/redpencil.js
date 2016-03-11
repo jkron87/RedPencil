@@ -38,6 +38,7 @@ function ModifyProductPrice(id, value) {
     if (index != -1) {
         products[index].old_price = products[index].price;
         products[index].price += value;
+        products[index].days_since_price_change = 0;
     }
 }
 
