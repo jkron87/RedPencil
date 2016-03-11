@@ -21,8 +21,8 @@ var products = [
  * @return {number}
  */
 function GetProductIndexById(id) {
-    for (var i = 0; i < products.length; i++) {
-        if (products[i].id == id) {
+    for (var i = 0, j = products.length; i < j; i++) {
+        if (products[i].id === id) {
             return i
         }
     }
