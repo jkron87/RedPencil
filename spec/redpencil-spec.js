@@ -9,4 +9,9 @@ describe("Modify Product Price", function () {
         var index = GetProductIndexById("C3");
         expect(index).toBe(2);
     });
+
+    it("returns index -1 when product id \"C5\" is passed", function () {
+        var index = GetProductIndexById("C5");
+        expect(index).toBe(-1);
+    });
 });
