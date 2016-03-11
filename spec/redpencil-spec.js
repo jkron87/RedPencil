@@ -43,4 +43,16 @@ describe("Modify Product Price", function () {
         expect(percentage).toBe(25);
     });
 
+    it("returns percentage of price reduction", function () {
+        var old_price = 1000;
+        var new_price = 750;
+        var percentage = GetPriceReductionPercentage(old_price, new_price);
+        expect(percentage).toBe(25);
+    });
+
+    it("updates both price and old price properties", function () {
+        ModifyProductPrice("A1", -100);
+        expect(products[0].price).toBe(100);
+        expect(products[0].old_price).toBe(200);
+    });
 });
