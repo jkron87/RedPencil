@@ -43,5 +43,6 @@ function ModifyProductPrice(id, value) {
  * @return {number}
  */
 function GetPriceReductionPercentage(old_price, new_price) {
-    return 10
+    var difference = old_price - new_price;
+    return (old_price / 100) * (difference / 100)
 }
