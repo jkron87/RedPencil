@@ -5,4 +5,8 @@ describe("Modify Product Price", function () {
         expect(index).toBe(1);
     });
 
+    it("returns index 2 when product id \"C3\" is passed", function () {
+        var index = GetProductIndexById("C3");
+        expect(index).toBe(2);
+    });
 });
