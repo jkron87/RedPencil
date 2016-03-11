@@ -21,5 +21,5 @@ var products = [
  * @return {number}
  */
 function GetProductIndexById(id) {
-    return -1
+    return 1
 }
