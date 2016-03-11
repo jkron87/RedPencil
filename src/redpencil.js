@@ -38,3 +38,10 @@ function ModifyProductPrice(id, value) {
         products[index].price += value;
     }
 }
+
+/**
+ * @return {number}
+ */
+function GetPriceReductionPercentage(old_price, new_price) {
+    return null
+}

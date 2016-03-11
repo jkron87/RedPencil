@@ -28,4 +28,11 @@ describe("Modify Product Price", function () {
         ModifyProductPrice("C3", -100);
         expect(products[2].price).toBe(200);
     });
+
+    it("returns percentage of price reduction", function () {
+        var old_price = 1000;
+        var new_price = 900;
+        var percentage = GetPriceReductionPercentage(old_price, new_price);
+        expect(percentage).toBe(10);
+    });
 });
