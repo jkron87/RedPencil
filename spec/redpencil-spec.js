@@ -55,4 +55,10 @@ describe("Modify Product Price", function () {
         expect(products[0].price).toBe(100);
         expect(products[0].old_price).toBe(200);
     });
+
+    it("update days since last price change", function () {
+        ModifyProductPrice("D8", -5);
+        expect(products[3].days_since_price_change).toBe(0);
+    });
+
 });

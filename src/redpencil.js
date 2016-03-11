@@ -12,9 +12,10 @@
  */
 
 var products = [
-    {"id": "A1", "name": "Hat", "price": 200, "old_price": 0},
-    {"id": "B5", "name": "Suit", "price": 500, "old_price": 0},
-    {"id": "C3", "name": "Shoes", "price": 300, "old_price": 0}
+    {"id": "A1", "name": "Hat", "price": 200, "old_price": 0, "days_since_price_change":0},
+    {"id": "B5", "name": "Suit", "price": 500, "old_price": 0, "days_since_price_change":0},
+    {"id": "C3", "name": "Shoes", "price": 300, "old_price": 0, "days_since_price_change":0},
+    {"id": "D8", "name": "IceCream", "price": 25, "old_price": 0, "days_since_price_change":35}
 ];
 
 /**
