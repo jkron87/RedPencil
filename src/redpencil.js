@@ -41,8 +41,14 @@ function ModifyProductPrice(id, value) {
     if (index != -1) {
         products[index].old_price = products[index].price;
         products[index].price += value;
-        if(products[index].days_since_price_change > 29) {
-            products[index].promotion_active = true;
+
+        if(products[index].price < products[index].old_price) {
+
+            var percentage = GetPriceReductionPercentage(products[index].old_price, products[index].price);
+
+            if (products[index].days_since_price_change > 29 && percentage >= 5 && percentage <= 30) {
+                products[index].promotion_active = true;
+            }
         }
         products[index].days_since_price_change = 0;
     }
