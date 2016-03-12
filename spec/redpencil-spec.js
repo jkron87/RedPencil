@@ -73,4 +73,9 @@ describe("Modify Product Price", function () {
         ModifyProductPrice("G7", -20);
         expect(products[6].promotion_active).toBe(false);
     });
+
+    it("reduction is more than 30% with regard to the original price, the promotion is ended immediately", function () {
+        ModifyProductPrice("G6", -50);
+        expect(products[5].promotion_active).toBe(false);
+    });
 });

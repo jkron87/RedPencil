@@ -14,41 +14,76 @@
 Big.DP = 2;
 
 var products = [
-    {"id": "A1", "name": "Hat", "price": 200, "old_price": 0, "days_since_price_change": 0, "promotion_active": false},
-    {"id": "B5", "name": "Suit", "price": 500, "old_price": 0, "days_since_price_change": 0, "promotion_active": false},
     {
-        "id": "C3",
-        "name": "Shoes",
-        "price": 300,
-        "old_price": 0,
-        "days_since_price_change": 0,
-        "promotion_active": false
+        "id"                      : "A1",
+        "name"                    : "Hat",
+        "price"                   : 200,
+        "old_price"               : 0,
+        "days_since_price_change" : 0,
+        "promotion_active"        : false,
+        "reduction_percentage"    : 0
     },
     {
-        "id": "D8",
-        "name": "IceCream",
-        "price": 25,
-        "old_price": 0,
-        "days_since_price_change": 35,
-        "promotion_active": false
+        "id"                      : "B5",
+        "name"                    : "Suit",
+        "price"                   : 500,
+        "old_price"               : 0,
+        "days_since_price_change" : 0,
+        "promotion_active"        : false,
+        "reduction_percentage"    : 0
     },
     {
-        "id": "G4",
-        "name": "Apple",
-        "price": 250,
-        "old_price": 0,
-        "days_since_price_change": 45,
-        "promotion_active": false
+        "id"                      : "C3",
+        "name"                    : "Shoes",
+        "price"                   : 300,
+        "old_price"               : 0,
+        "days_since_price_change" : 0,
+        "promotion_active"        : false,
+        "reduction_percentage"    : 0
     },
-    {"id": "G6", "name": "Mug", "price": 200, "old_price": 0, "days_since_price_change": 30, "promotion_active": false},
-    {"id": "G7", "name": "Tea", "price": 500, "old_price": 0, "days_since_price_change": 30, "promotion_active": false}
+    {
+        "id"                      : "D8",
+        "name"                    : "IceCream",
+        "price"                   : 25,
+        "old_price"               : 0,
+        "days_since_price_change" : 35,
+        "promotion_active"        : false,
+        "reduction_percentage"    : 0
+    },
+    {
+        "id"                      : "G4",
+        "name"                    : "Apple",
+        "price"                   : 250,
+        "old_price"               : 0,
+        "days_since_price_change" : 45,
+        "promotion_active"        : false,
+        "reduction_percentage"    : 0
+    },
+    {
+        "id"                      : "G6",
+        "name"                    : "Mug",
+        "price"                   : 200,
+        "old_price"               : 0,
+        "days_since_price_change" : 30,
+        "promotion_active"        : false,
+        "reduction_percentage"    : 0
+    },
+    {
+        "id"                      : "G7",
+        "name"                    : "Tea",
+        "price"                   : 500,
+        "old_price"               : 0,
+        "days_since_price_change" : 30,
+        "promotion_active"        : false,
+        "reduction_percentage"    : 0
+    }
 ];
 
 /**
  * @return {number}
  */
 function GetProductIndexById(id) {
-    for (var i = 0, j = products.length; i < j; i++) {
+    for (var i = 0, j = products.length ; i < j ; i++) {
         if (products[i].id === id) {
             return i
         }
@@ -69,8 +104,15 @@ function ModifyProductPrice(id, value) {
 
             var percentage = GetPriceReductionPercentage(products[index].old_price, products[index].price);
 
-            if (products[index].days_since_price_change > 29 && percentage >= 5 && percentage <= 30) {
-                products[index].promotion_active = true;
+            if (products[index].reduction_percentage + percentage <= 30) {
+
+                if (products[index].days_since_price_change > 29 && percentage >= 5 && percentage <= 30) {
+                    products[index].promotion_active = true;
+                    products[index].reduction_percentage += percentage;
+                }
+            }else{
+                products[index].promotion_active = false;
+                products[index].reduction_percentage = 0;
             }
         }
         products[index].days_since_price_change = 0;
