@@ -10,15 +10,36 @@
  If the price if reduced during the red pencil promotion so that the overall reduction is more than 30% with regard to the original price, the promotion is ended immediately.
  After a red pencil promotion is ended additional red pencil promotions may follow – as long as the start condition is valid: the price was stable for 30 days and these 30 days don’t intersect with a previous red pencil promotion.
  */
-
+Big.DP = 2;
 var products = [
-    {"id": "A1", "name": "Hat", "price": 200, "old_price": 0, "days_since_price_change":0,"promotion_active":false},
-    {"id": "B5", "name": "Suit", "price": 500, "old_price": 0, "days_since_price_change":0,"promotion_active":false},
-    {"id": "C3", "name": "Shoes", "price": 300, "old_price": 0, "days_since_price_change":0,"promotion_active":false},
-    {"id": "D8", "name": "IceCream", "price": 25, "old_price": 0, "days_since_price_change":35, "promotion_active":false},
-    {"id": "G4", "name": "Apple", "price": 250, "old_price": 0, "days_since_price_change":45, "promotion_active":false},
-    {"id": "G6", "name": "Mug", "price": 200, "old_price": 0, "days_since_price_change":30, "promotion_active":false},
-    {"id": "G7", "name": "Tea", "price": 500, "old_price": 0, "days_since_price_change":30, "promotion_active":false}
+    {"id": "A1", "name": "Hat", "price": 200, "old_price": 0, "days_since_price_change": 0, "promotion_active": false},
+    {"id": "B5", "name": "Suit", "price": 500, "old_price": 0, "days_since_price_change": 0, "promotion_active": false},
+    {
+        "id": "C3",
+        "name": "Shoes",
+        "price": 300,
+        "old_price": 0,
+        "days_since_price_change": 0,
+        "promotion_active": false
+    },
+    {
+        "id": "D8",
+        "name": "IceCream",
+        "price": 25,
+        "old_price": 0,
+        "days_since_price_change": 35,
+        "promotion_active": false
+    },
+    {
+        "id": "G4",
+        "name": "Apple",
+        "price": 250,
+        "old_price": 0,
+        "days_since_price_change": 45,
+        "promotion_active": false
+    },
+    {"id": "G6", "name": "Mug", "price": 200, "old_price": 0, "days_since_price_change": 30, "promotion_active": false},
+    {"id": "G7", "name": "Tea", "price": 500, "old_price": 0, "days_since_price_change": 30, "promotion_active": false}
 ];
 
 /**
@@ -42,7 +63,7 @@ function ModifyProductPrice(id, value) {
         products[index].old_price = products[index].price;
         products[index].price += value;
 
-        if(products[index].price < products[index].old_price) {
+        if (products[index].price < products[index].old_price) {
 
             var percentage = GetPriceReductionPercentage(products[index].old_price, products[index].price);
 
@@ -59,5 +80,5 @@ function ModifyProductPrice(id, value) {
  */
 function GetPriceReductionPercentage(old_price, new_price) {
     var difference = old_price - new_price;
-    return (old_price / 100) * (difference / 100)
+    return (difference / old_price) * 100
 }
