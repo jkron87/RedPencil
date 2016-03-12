@@ -17,7 +17,8 @@ var products = [
     {"id": "C3", "name": "Shoes", "price": 300, "old_price": 0, "days_since_price_change":0,"promotion_active":false},
     {"id": "D8", "name": "IceCream", "price": 25, "old_price": 0, "days_since_price_change":35, "promotion_active":false},
     {"id": "G4", "name": "Apple", "price": 250, "old_price": 0, "days_since_price_change":45, "promotion_active":false},
-    {"id": "G6", "name": "Mug", "price": 200, "old_price": 0, "days_since_price_change":30, "promotion_active":false}
+    {"id": "G6", "name": "Mug", "price": 200, "old_price": 0, "days_since_price_change":30, "promotion_active":false},
+    {"id": "G7", "name": "Tea", "price": 500, "old_price": 0, "days_since_price_change":30, "promotion_active":false}
 ];
 
 /**

@@ -27,25 +27,13 @@
     <favorites_list name="RedPencil" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5934633">
+    <splitter split-orientation="horizontal" split-proportion="0.3962156">
       <split-first>
         <leaf>
-          <file leaf-file-name="redpencil.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/redpencil.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38825756" vertical-offset="509" max-vertical-offset="1037">
-                  <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="SpecRunner.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SpecRunner.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.192307" vertical-offset="25" max-vertical-offset="527">
+                <state vertical-scroll-proportion="-8.692307" vertical-offset="12" max-vertical-offset="527">
                   <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="85" />
                   <folding />
                 </state>
@@ -62,15 +50,25 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="redpencil-spec.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/spec/redpencil-spec.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.34848484" vertical-offset="836" max-vertical-offset="1377">
+                  <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="redpencil-spec.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spec/redpencil-spec.js">
+          <file leaf-file-name="redpencil.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/redpencil.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.728" vertical-offset="792" max-vertical-offset="1292">
-                  <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.19318181" vertical-offset="0" max-vertical-offset="1054">
+                  <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
                   <folding />
                 </state>
               </provider>
@@ -88,8 +86,8 @@
       <list>
         <option value="$PROJECT_DIR$/SpecRunner.html" />
         <option value="$PROJECT_DIR$/redpencil.html" />
-        <option value="$PROJECT_DIR$/spec/redpencil-spec.js" />
         <option value="$PROJECT_DIR$/src/redpencil.js" />
+        <option value="$PROJECT_DIR$/spec/redpencil-spec.js" />
       </list>
     </option>
   </component>
@@ -278,7 +276,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09166667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -343,9 +341,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1020">
           <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -377,9 +373,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1020">
           <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -435,7 +429,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.192307" vertical-offset="25" max-vertical-offset="527">
+        <state vertical-scroll-proportion="-8.692307" vertical-offset="12" max-vertical-offset="527">
           <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="85" />
           <folding />
         </state>
@@ -443,19 +437,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/redpencil-spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.728" vertical-offset="792" max-vertical-offset="1292">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.34848484" vertical-offset="836" max-vertical-offset="1377">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redpencil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38825756" vertical-offset="509" max-vertical-offset="1037">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.19318181" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
